@@ -35,18 +35,19 @@ Käytä `git status` -komentoa ja tarkastele sen tulostetta. Näkyykö `hello.tx
 
 ### Muutoksen lisääminen
 
-Tekemäsi muutos `hello.txt`-tiedostoon täytyy seuraavaksi lisätä osaksi commit:ia. `git status`-komento näyttää vinkin tarvitsemastasi komennosta:
+Tekemäsi muutos `hello.txt`-tiedostoon täytyy seuraavaksi lisätä osaksi commit:ia. `git status`-komento tunnistaa, että tiedosto on muuttunut, ja näyttää vinkin tarvitsemastasi komennosta muutoksen lisäämiseksi versionhallintaan:
 
 ```sh
 git status
-git *** hello.txt    # korvaa *** `status`-komennon antamalla ohjeella
+git *** hello.txt    # korvaa *** edellisen komennon antamalla ohjeella
 ```
 
-Yhdessä commitissa voidaan muuttaa useampia tiedostoja, jolloin voisit jatkaa tiedostojen lisäämistä samaan committiin. Suorita `git status` uudelleen. Nyt näet, että muutos on valmis "commitoitavaksi".
+Yhdessä commitissa voidaan muuttaa useampia tiedostoja, jolloin voisit jatkaa tiedostojen lisäämistä samaan committiin. Tällä kertaa meille riittää tämä yksi tiedosto.
+
 
 ### "Commitin" luonti
 
-Kun suoritat `git status`-komennon, Git näyttää, mitkä tiedostot ovat mukana commitissa:
+Kun suoritat `git status`-komennon, Git näyttää, mitkä tiedostot ovat valmiina commitoitavaksi:
 
 ```sh
 git status
@@ -58,7 +59,7 @@ Changes to be committed:
         modified:   hello.txt
 ```
 
-Käytä seuraavaksi `git commit` -komentoa luodaksesi uuden commitin:
+Käytä seuraavaksi `git commit` -komentoa, joka luo uuden commitin, jossa tekemäsi muutos on mukana:
 
 ```sh
 git commit -m "Hello world lisätty tiedostoon"
@@ -66,9 +67,10 @@ git commit -m "Hello world lisätty tiedostoon"
 
 `-m` tarkoittaa ns. "commit messagea", eli viestiä, jolla tämä muutos tunnistetaan versiohistoriassa myöhemmin.
 
+
 ### Commitin vienti etärepositorioon
 
-Aja jälleen tuttu komento:
+Aja commitin luonnin jälkeen tuttu komento:
 
 ```sh
 git status
@@ -85,9 +87,10 @@ Your branch is ahead of 'origin/master' by 1 commit.
 Noudata Gitin antamaa ohjetta ja anna komento, jolla julkaiset paikalliset muutoksesi etärepositorioon:
 
 ```sh
-git ****    # korvaa **** `status`-komennosta saamallasi ohjeella
+git ****    # korvaa **** edellisestä komennosta saamallasi ohjeella
 ```
 
+Käy lopuksi tarkastamassa etärepositoriosi sisältö. Onko `hello.txt` päivittynyt?
 
 ## .gitignore ja .gitattributes
 
