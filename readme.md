@@ -14,7 +14,7 @@ Tehtävänanto keskittyy Git-komentorivityökaluun, mutta voit ratkaista tehtäv
 
 ## Tehtävä
 
-Tässä tehtävässä tarkoituksesi on ladata Git-reposi omalle koneellesi, tehdä siihen pieni muutos, ja päivittää tekemäsi muutos etärepositorioon.
+Tässä tehtävässä tarkoituksesi on ladata Git-repositorio omalle koneellesi, tehdä siihen pieni muutos, ja päivittää tekemäsi muutos etärepositorioon.
 
 ### Repositorion kloonaaminen
 
