@@ -1,20 +1,33 @@
 # Git "Hello world"
 
-Tässä tehtävässä opit perusasioita Git-versionhallinnasta. Tehtävän edellytyksenä on, että olet asentanut Git-työkalun koneellesi ja tehnyt tarvittavat asetukset Gitin käyttämiseksi: [Set up Git (GitHub)](https://docs.github.com/en/get-started/quickstart/set-up-git). Tarvitset myös GitHub-tunnuksen, jonka voit luoda osoitteessa https://github.com/.
+Tässä tehtävässä opit perusasioita Git-versionhallinnasta. Tehtävän edellytyksenä on, että olet asentanut Git-työkalun koneellesi ja tehnyt tarvittavat asetukset Gitin käyttämiseksi: [Set up Git (GitHub)](https://docs.github.com/en/get-started/quickstart/set-up-git). Tarvitset myös [GitHub](https://github.com/)-tunnuksen<sup>1</sup>, jonka voit luoda osoitteessa https://github.com/.
 
-Tehtävänanto keskittyy Git-komentorivityökaluun, mutta voit ratkaista tehtävän myös GitHub desktopilla tai muulla graafisella työkalulla. Myös useista koodieditoreista löytyy Git-tuki, jonka avulla voit tehdä tehtävän. Kurssin ohjeistuksessa oletetaan kuitenkin, että käytät komentorivityökalua, joten joudut etsimään vastaavat toiminnot omasta työkalustasi itsenäisesti.
-
-
-💡 *Jos käytät GitHubia jo valmiiksi työsi puolesta, voi olla tietoturvasyistä kannattavaa luoda erillinen tunnus opintoja varten.*
+<sup>1</sup> <em>Jos käytät GitHubia jo valmiiksi työsi puolesta, voi olla tietoturvasyistä kannattavaa luoda erillinen tunnus opintoja varten.</em>
 
 🔐 *Sinun ei tarvitse antaa omaa nimeäsi GitHub-rekisteröitymisessä. Sähköpostiosoitteena voit käyttää oppilaitoksen sähköpostia ja voit piilottaa sen muilta käyttäjiltä seuraamalla [GitHubin ohjeita](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/setting-your-commit-email-address#setting-your-commit-email-address-on-github).*
 
-⛔ *Jos et missään tapauksessa halua käyttää GitHubia, sovi opettajasi kanssa vaihtoehtoisesta palvelusta tai tehtävän palautustavasta.*
+
+## Git-komentorivityökalu
+
+Tehtävänanto keskittyy Git-komentorivityökaluun. Itse komentorivin osalta oletamme komentorivin peruskäytön, kuten komentorivin avaamisen ja eri hakemistojen välillä siirtymisen, olevan ennalta tuttua. Mikäli komentorivi aiheuttaa ongelmia, tämän ja seuraavat tehtävät voi ratkaista myös graafisella työkalulla, kuten VS Code tai GitHub desktop:
+
+* [Using Git source control in VS Code ](https://code.visualstudio.com/docs/sourcecontrol/overview)
+* [GitHub Desktop](https://desktop.github.com/)
+
+Kurssin ohjeistuksessa oletetaan, että käytät komentorivityökalua, joten joudut etsimään vastaavat toiminnot omasta työkalustasi itsenäisesti.
+
+
+## Gitin perusteet
+
+Git on erittäin monipuolinen työkalu ja sen käyttämiseksi löytyy valtava määrä erilaisia ohjeita ja tutoriaaleja. Tutoriaalien näkökulma ja sisältö vaihtelee melko suuresti jo Gitin perusteiden osalta: osassa luodaan itse oma repositorio, osassa kloonataan valmis repositorio. Osassa luodaan ja yhdistellään kehityshaaroja, kun taas toisissa työskennellään vain yhdessä kehityshaarassa.
+
+Tässä tehtävässä tarvitset vain Gitin komentoja `clone`, `add`, `commit` ja `push`. Kaikki syventävämmät aiheet, esimerkiksi kehityshaaroihin (branch) liittyen, voit jättää ainakin toistaiseksi väliin.
 
 
 ## Tehtävä
 
-Tässä tehtävässä tarkoituksesi on ladata Git-repositorio omalle koneellesi, tehdä siihen pieni muutos, ja päivittää tekemäsi muutos etärepositorioon.
+Tässä tehtävässä tarkoituksesi on ladata tämä Git-repositorio omalle koneellesi, tehdä siihen pieni muutos, ja päivittää tekemäsi muutos takaisin etärepositorioon.
+
 
 ### Repositorion kloonaaminen
 
@@ -24,11 +37,12 @@ Aloita kloonaamalla tämä Git-repositorio omalle koneellesi. Harjoitus täytyy 
 git clone https://github.com/varmista-etta-github-tunnuksesi-on-repositorion-osoitteessa.git
 ```
 
-Kun olet kloonannut repositorion, avaa se tiedostojärjestelmästä tai koodieditorillasi.
+Kun olet kloonannut repositorion tietokoneellesi valitsemaasi hakemistoon, avaa hakemisto koodieditorillasi.
+
 
 ### Tiedoston muokkaaminen
 
-Avaa repositoriossa valmiiksi oleva tiedosto [hello.txt](./hello.txt) koodi- tai tekstieditorilla. Lisää tiedostoon teksti `hello world` ja tallenna tiedosto.
+Avaa repositoriossa valmiiksi oleva tiedosto [hello.txt](./hello.txt) koodieditorilla. Lisää tiedostoon teksti `hello world` ja tallenna tiedosto.
 
 Käytä `git status` -komentoa ja tarkastele sen tulostetta. Näkyykö `hello.txt` tulosteessa? Mitä siitä kerrotaan?
 
@@ -92,10 +106,13 @@ git ****    # korvaa **** edellisestä komennosta saamallasi ohjeella
 
 Käy lopuksi tarkastamassa etärepositoriosi sisältö. Onko `hello.txt` päivittynyt?
 
+
 ## .gitignore ja .gitattributes
 
-Tämä pohja sisältää myös valmiiksi määritellyt `.gitignore`- ja `.gitattributes`-tiedostot. `.gitignore`:ssa on määritelty, mitkä tiedostot jätetään versionhallinnan ulkopuolelle, kun taas `.gitattributes`-tiedostossa on määritetty kaikille tekstitiedostoille [yhtenäiset rivinvaihtomerkit](https://docs.github.com/en/get-started/getting-started-with-git/configuring-git-to-handle-line-endings). Voit muokata näitä tiedostoja tarpeidesi mukaan.
+Tämä pohja sisältää myös valmiiksi määritellyt [`.gitignore`](./.gitignore)- ja [`.gitattributes`](./.gitattributes)-tiedostot. `.gitignore`:ssa on määritelty, mitkä tiedostot jätetään [versionhallinnan ulkopuolelle](https://git-scm.com/docs/gitignore), kun taas `.gitattributes`-tiedostossa on määritetty kaikille tekstitiedostoille [yhtenäiset rivinvaihtomerkit](https://docs.github.com/en/get-started/getting-started-with-git/configuring-git-to-handle-line-endings). Voit muokata näitä tiedostoja tarpeidesi mukaan.
 
+
+⛔ *Jos et missään tapauksessa halua käyttää kurssilla GitHubia, sovi opettajasi kanssa mahdollisesta vaihtoehtoisesta palvelusta tai tehtävien palautustavasta.*
 
 -----
 
