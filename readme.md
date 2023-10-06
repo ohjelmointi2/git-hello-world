@@ -73,18 +73,18 @@ Changes to be committed:
         modified:   hello.txt
 ```
 
-Käytä seuraavaksi `git commit` -komentoa, joka luo uuden commitin, jossa tekemäsi muutos on mukana:
+Käytä seuraavaksi `git commit` -komentoa, joka luo uuden commitin, jossa lisäämäsi muutos on mukana:
 
 ```sh
 git commit -m "Hello world lisätty tiedostoon"
 ```
 
-`-m` tarkoittaa ns. "commit messagea", eli viestiä, jolla tämä muutos tunnistetaan versiohistoriassa myöhemmin.
+💡 *Komennossa `-m` tarkoittaa viestiä, jolla tämä muutos tunnistetaan versiohistoriassa myöhemmin (commit **m**essage).*
 
 
 ### Commitin vienti etärepositorioon
 
-Aja commitin luonnin jälkeen tuttu komento:
+Aja commitin luonnin jälkeen taas tuttu komento:
 
 ```sh
 git status
@@ -104,7 +104,7 @@ Noudata Gitin antamaa ohjetta ja anna komento, jolla julkaiset paikalliset muuto
 git ****    # korvaa **** edellisestä komennosta saamallasi ohjeella
 ```
 
-Käy lopuksi tarkastamassa etärepositoriosi sisältö. Onko `hello.txt` päivittynyt?
+Käy lopuksi tarkastamassa etärepositoriosi sisältö. Varmista, että `hello.txt` on päivittynyt.
 
 
 ## .gitignore ja .gitattributes
