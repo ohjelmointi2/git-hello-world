@@ -6,24 +6,30 @@ Tässä tehtävässä opit perusasioita Git-versionhallinnasta. Tehtävän edell
 
 🔐 *Sinun ei tarvitse antaa omaa nimeäsi GitHub-rekisteröitymisessä. Sähköpostiosoitteena voit käyttää oppilaitoksen sähköpostia ja voit piilottaa sen muilta käyttäjiltä seuraamalla [GitHubin ohjeita](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/setting-your-commit-email-address#setting-your-commit-email-address-on-github).*
 
-⛔ *Jos et missään tapauksessa halua käyttää kurssilla GitHubia, sovi opettajasi kanssa mahdollisesta vaihtoehtoisesta palvelusta tai tehtävien palautustavasta.*
+⛔ *Jos et missään tapauksessa halua käyttää kurssilla GitHubia, sovi opettajasi kanssa mahdollisesta vaihtoehtoisesta git-palvelusta tai tehtävien palautustavasta.*
 
 
 ## Git-komentorivityökalu
 
-Tehtävänanto keskittyy Git-komentorivityökaluun. Itse komentorivin osalta oletamme komentorivin peruskäytön, kuten komentorivin avaamisen ja eri hakemistojen välillä siirtymisen, olevan ennalta tuttua. Mikäli komentorivi aiheuttaa ongelmia, tämän ja seuraavat tehtävät voi ratkaista myös graafisella työkalulla, kuten VS Code tai GitHub desktop:
+Tehtävänanto keskittyy Git-komentorivityökaluun. Itse komentorivin osalta oletamme komentorivin peruskäytön olevan ennalta tuttua. Peruskäytöksi laskemme mm. komentorivin avaamisen ja eri hakemistojen välillä siirtymisen. Mikäli komentorivi aiheuttaa ongelmia, voit ratkaista tämän ja seuraavat tehtävät myös graafisella työkalulla, kuten VS Code tai GitHub desktop:
 
 * [Using Git source control in VS Code ](https://code.visualstudio.com/docs/sourcecontrol/overview)
 * [GitHub Desktop](https://desktop.github.com/)
 
-Kurssin ohjeistuksessa oletetaan, että käytät komentorivityökalua, joten joudut etsimään vastaavat toiminnot omasta työkalustasi itsenäisesti.
+💡 *Kurssin ohjeistuksessa oletetaan, että käytät komentorivityökalua, joten joudut etsimään vastaavat toiminnot omasta työkalustasi itsenäisesti.*
 
 
 ## Gitin perusteet
 
 Git on erittäin monipuolinen työkalu ja sen käyttämiseksi löytyy valtava määrä erilaisia ohjeita ja tutoriaaleja. Tutoriaalien näkökulma ja sisältö vaihtelee melko suuresti jo Gitin perusteiden osalta: osassa luodaan itse oma repositorio, osassa kloonataan valmis repositorio. Osassa luodaan ja yhdistellään kehityshaaroja, kun taas toisissa työskennellään vain yhdessä kehityshaarassa.
 
-Tässä tehtävässä tarvitset vain Gitin komentoja `clone`, `add`, `commit` ja `push`. Kaikki syventävämmät aiheet, esimerkiksi kehityshaaroihin (branch) liittyen, voit jättää ainakin toistaiseksi väliin.
+Tässä tehtävässä tarvitset vain Gitin komentoja `clone`, `add`, `commit` ja `push`. Kaikki syventävämmät aiheet, esimerkiksi kehityshaaroihin (branch) liittyen, voit jättää ainakin toistaiseksi väliin. Tämän tehtävän suorittamiseksi suosittelemme mm. seuraavia lähteitä:
+
+* [What is version control? (Atlassian)](https://www.atlassian.com/git/tutorials/what-is-version-control). Katso myös [video](https://youtu.be/xQujH0ElTUg).
+* [What is Git (Atlassian)](https://www.atlassian.com/git/tutorials/what-is-git)
+* [Install Git (Atlassian)](https://www.atlassian.com/git/tutorials/install-git)
+* [Git add (Atlassian)](https://www.atlassian.com/git/tutorials/saving-changes)
+* [Git Cheat Sheet, pdf (GitHub)](https://education.github.com/git-cheat-sheet-education.pdf)
 
 
 ## Tehtävä
@@ -39,26 +45,28 @@ Aloita kloonaamalla tämä Git-repositorio omalle koneellesi. Harjoitus täytyy 
 git clone https://github.com/varmista-etta-github-tunnuksesi-on-repositorion-osoitteessa.git
 ```
 
-Kun olet kloonannut repositorion tietokoneellesi valitsemaasi hakemistoon, avaa hakemisto koodieditorillasi.
+Kun olet kloonannut repositorion tietokoneellesi valitsemaasi hakemistoon, avaa kloonattu hakemisto koodieditorillasi.
 
 
 ### Tiedoston muokkaaminen
 
-Avaa repositoriossa valmiiksi oleva tiedosto [hello.txt](./hello.txt) koodieditorilla. Lisää tiedostoon teksti `hello world` ja tallenna tiedosto.
+Avaa repositoriossa valmiiksi oleva tiedosto [hello.txt](./hello.txt) koodieditorillasi. Lisää tiedostoon teksti `hello world` ja tallenna tiedosto.
 
 Käytä `git status` -komentoa ja tarkastele sen tulostetta. Näkyykö `hello.txt` tulosteessa? Mitä siitä kerrotaan?
 
 
 ### Muutoksen lisääminen
 
-Tekemäsi muutos `hello.txt`-tiedostoon täytyy seuraavaksi lisätä osaksi commit:ia. `git status`-komento tunnistaa, että tiedosto on muuttunut, ja näyttää vinkin tarvitsemastasi komennosta muutoksen lisäämiseksi versionhallintaan:
+`hello.txt`-tiedostoa on nyt muokattu paikallisesti ja seuraavaksi tiedoston viimeisin sisältö halutaan lisätä myös versionhallintaan. Lisääminen tapahtuu kahdessa vaiheessa, jotka on kuvattu selkeästi dokumentissa [Git add (Atlassian)](https://www.atlassian.com/git/tutorials/saving-changes).
+
+Kun suoritat `git status`-komennon, se kertoo, että tiedosto on muuttunut. Git myös näyttää vinkin komennosta, jolla saat lisättyä muutoksen versionhallintaan:
 
 ```sh
 git status
-git *** hello.txt    # korvaa *** edellisen komennon antamalla ohjeella
+git *** hello.txt    # korvaa *** status-komennon antamalla komennolla
 ```
 
-Yhdessä commitissa voidaan muuttaa useampia tiedostoja, jolloin voisit jatkaa tiedostojen lisäämistä samaan committiin. Tällä kertaa meille riittää tämä yksi tiedosto.
+Yhdessä commitissa voidaan muuttaa useampia tiedostoja, joten voisit jatkaa tiedostojen lisäämistä samaan committiin. Tällä kertaa meille riittää tämä yksi tiedosto.
 
 
 ### "Commitin" luonti
