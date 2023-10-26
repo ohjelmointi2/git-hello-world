@@ -47,6 +47,8 @@ git clone https://github.com/varmista-etta-github-tunnuksesi-on-repositorion-oso
 
 Kun olet kloonannut repositorion tietokoneellesi valitsemaasi hakemistoon, avaa kloonattu hakemisto koodieditorillasi.
 
+💡 *Tämä repositorio ei sisällä Java-projektia vaan pelkän yksittäisen tekstitiedoston. Se näyttää siis editorissasi mahdollisesti hieman erilaiselta kuin "tavalliset" projektit.*
+
 
 ### Tiedoston muokkaaminen
 
