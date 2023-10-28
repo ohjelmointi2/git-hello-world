@@ -11,10 +11,11 @@ Tässä tehtävässä opit perusasioita Git-versionhallinnasta. Tehtävän edell
 
 ## Git-komentorivityökalu
 
-Tehtävänanto keskittyy Git-komentorivityökaluun. Itse komentorivin osalta oletamme komentorivin peruskäytön olevan ennalta tuttua. Peruskäytöksi laskemme mm. komentorivin avaamisen ja eri hakemistojen välillä siirtymisen. Mikäli komentorivi aiheuttaa ongelmia, voit ratkaista tämän ja seuraavat tehtävät myös graafisella työkalulla, kuten VS Code tai GitHub desktop:
+Tehtävänanto keskittyy Git-komentorivityökaluun. Itse komentorivin osalta oletamme [komentorivin peruskäytön](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Command_line) olevan ennalta tuttua. Peruskäytöksi laskemme mm. komentorivin avaamisen ja eri hakemistojen välillä siirtymisen. Mikäli komentorivi aiheuttaa ongelmia, voit ratkaista tämän ja seuraavat tehtävät myös graafisella työkalulla, kuten VS Code tai GitHub desktop.
 
-* [Using Git source control in VS Code ](https://code.visualstudio.com/docs/sourcecontrol/overview)
-* [GitHub Desktop](https://desktop.github.com/)
+* [Command line crash course (developer.mozilla.org)](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Command_line)
+* [Using Git source control in VS Code (code.visualstudio.com)](https://code.visualstudio.com/docs/sourcecontrol/overview)
+* [GitHub Desktop (desktop.github.com)](https://desktop.github.com/)
 
 💡 *Kurssin ohjeistuksessa oletetaan, että käytät komentorivityökalua, joten joudut etsimään vastaavat toiminnot omasta työkalustasi itsenäisesti.*
 
@@ -46,6 +47,8 @@ git clone https://github.com/varmista-etta-github-tunnuksesi-on-repositorion-oso
 ```
 
 Kun olet kloonannut repositorion tietokoneellesi valitsemaasi hakemistoon, avaa kloonattu hakemisto koodieditorillasi.
+
+💡 *Git _kloonaa_ repositorion alihakemistoon, jonka nimi on oletuksena sama kuin repositorion nimi. Seuraavien vaiheiden komennot syötetään repositorion hakemiston sisällä. [Siirry siis kloonattuun hakemistoon komentorivilläsi](https://en.wikipedia.org/wiki/Cd_(command)).*
 
 💡 *Tämä repositorio ei sisällä Java-projektia vaan pelkän yksittäisen tekstitiedoston. Se näyttää siis editorissasi mahdollisesti hieman erilaiselta kuin "tavalliset" projektit.*
 
