@@ -10,7 +10,7 @@ In this exercise you learn the basics of Git version control. Before starting th
 ⛔ *If you absolutely do not want to use GitHub in the course, discuss with your teacher about a possible alternative git service or method for submitting assignments.*
 -->
 
-## Git-komentorivityökalu
+## Git command-line tool
 
 The exercise description focuses on the Git command-line tool. Regarding the command-line itself, it is assumed that you are familiar with the [basics](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Command_line). The basic knowledge includes e.g. opening the command-line window, and switching between different directories. If command-line causes problems, you can also solve this and the next exercises using a graphical user interface, such as VS code or GitHub desktop.
 
@@ -21,13 +21,13 @@ The exercise description focuses on the Git command-line tool. Regarding the com
 
 💡 *The course instructions assume that you will use a command-line tool, so you will need to independently find the corresponding functions in your own tool.*
 
-## Gitin perusteet
+## Git basics
 
-Git on erittäin monipuolinen työkalu ja sen käyttämiseksi löytyy valtava määrä erilaisia ohjeita ja tutoriaaleja. Tutoriaalien näkökulma ja sisältö vaihtelee melko suuresti jo Gitin perusteiden osalta: osassa luodaan itse oma repositorio, osassa kloonataan valmis repositorio. Osassa luodaan ja yhdistellään kehityshaaroja, kun taas toisissa työskennellään vain yhdessä kehityshaarassa.
+Git is a very versatile tool, and there are a huge number of different guides and tutorials available for using it. The perspective and content of the tutorials vary quite a bit even for the basics of Git: some create their own repository, while others clone an existing repository. Some create and merge branches, while others work only in a single branch.
 
-Tässä tehtävässä tarvitset vain Gitin komentoja `clone`, `add`, `commit` ja `push`. Kaikki syventävämmät aiheet, esimerkiksi kehityshaaroihin (branch) liittyen, voit jättää ainakin toistaiseksi väliin. Tämän tehtävän suorittamiseksi suosittelemme mm. seuraavia lähteitä:
+In this exercise you'll only need the `clone`, `add`, `commit` and `push` command. You can skip all more advanced topics, such as those related to branches, at least for now. For completing this task, we recommend the following sources::
 
-* [What is version control? (Atlassian)](https://www.atlassian.com/git/tutorials/what-is-version-control). Katso myös [video](https://youtu.be/xQujH0ElTUg).
+* [What is version control? (Atlassian)](https://www.atlassian.com/git/tutorials/what-is-version-control). Also, check the [video](https://youtu.be/xQujH0ElTUg).
 * [What is Git (Atlassian)](https://www.atlassian.com/git/tutorials/what-is-git)
 * [Install Git (Atlassian)](https://www.atlassian.com/git/tutorials/install-git)
 * [Git add (Atlassian)](https://www.atlassian.com/git/tutorials/saving-changes)
