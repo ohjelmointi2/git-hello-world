@@ -34,22 +34,21 @@ In this exercise you'll only need the `clone`, `add`, `commit` and `push` comman
 * [Git Cheat Sheet, pdf (GitHub)](https://education.github.com/git-cheat-sheet-education.pdf)
 
 
-## Tehtävä
+## Exercise
 
-Tässä tehtävässä tarkoituksesi on ladata tämä Git-repositorio omalle koneellesi, tehdä siihen pieni muutos, ja päivittää tekemäsi muutos takaisin etärepositorioon.
+In this task, your goal is to download this Git repository to your computer, make a small change to it, and update your change back to the remote repository.
 
+### Cloning a repository
 
-### Repositorion kloonaaminen
-
-Aloita kloonaamalla tämä Git-repositorio omalle koneellesi. Harjoitus täytyy tehdä omassa kopiossasi, eli varmista, että repositorion osoitteessa on mukana oma GitHub-käyttäjätunnuksesi! Oman kopiosi saat luotua kurssitoteutuksesi tehtävänannon GitHub classroom -linkin kautta.
+Start by cloning this Git repository to your computer. The exercise must be done in your own copy, so make sure that your GitHub username is included in the repository address! You can create your own copy through the GitHub Classroom link provided in your course assignment.
 
 ```sh
-git clone https://github.com/varmista-etta-github-tunnuksesi-on-repositorion-osoitteessa.git
+git clone https://github.com/make-sure-that-your-account-is-in-the-address.git
 ```
 
-Kun olet kloonannut repositorion tietokoneellesi valitsemaasi hakemistoon, avaa kloonattu hakemisto koodieditorillasi.
+Once you have cloned the repository to your computer in your chosen directory, open the cloned directory with your code editor.
 
-💡 *Git _kloonaa_ repositorion alihakemistoon, jonka nimi on oletuksena sama kuin repositorion nimi. Seuraavien vaiheiden komennot syötetään repositorion hakemiston sisällä. [Siirry siis kloonattuun hakemistoon komentorivilläsi](https://en.wikipedia.org/wiki/Cd_(command)).*
+💡 *Git _clones_ the repository into a directory which name is by default the same as the name of the repository. The commands in the upcoming sections must be ran inside the direcotry. So, [switch to the cloned directory using the command-line](https://en.wikipedia.org/wiki/Cd_(command)).*
 
 💡 *Tämä repositorio ei sisällä Java-projektia vaan pelkän yksittäisen tekstitiedoston. Se näyttää siis editorissasi mahdollisesti hieman erilaiselta kuin "tavalliset" projektit.*
 
