@@ -127,15 +127,14 @@ By clicking link above and then the latest *"GitHub Classroom Workflow"* executi
 
 ## .github, .gitignore ja .gitattributes
 
-Tämä tehtäväpohja sisältää tehtävänannon sekä muokattavan tiedoston lisäksi pisteellä alkavia "piilotiedostoja". Jos tiedostot eivät näy koodieditorisi hakemistorakenteessa, voit joutua muuttamaan editorisi asetuksia.
+This exercise template includes the assignment and an editable file, as well as "hidden files" that start with a dot. If the files are not visible in the directory structure of your code editor, you may need to change your editor's settings.
 
-[`.gitignore`-tiedostossa](./.gitignore) voidaan määritellä, mitkä tiedostot jätetään [versionhallinnan ulkopuolelle](https://git-scm.com/docs/gitignore), kun taas [`.gitattributes`-tiedostossa](./.gitattributes) on määritetty kaikille tekstitiedostoille [yhtenäiset rivinvaihtomerkit](https://docs.github.com/en/get-started/getting-started-with-git/configuring-git-to-handle-line-endings). Voit muokata näitä tiedostoja tarpeidesi mukaan kurssin tehtäviä suorittaessasi.
+In the [`.gitignore` file](./.gitignore) we can define, which files are [left outside the version control](https://git-scm.com/docs/gitignore), where as in the [`.gitattributes` file](./.gitattributes) we can define [common line ending characters](https://docs.github.com/en/get-started/getting-started-with-git/configuring-git-to-handle-line-endings) for all text files. You can modify these files to suit your needs in the exercises.
 
-[.github/](./.github/)-hakemisto sisältää [GitHub actions](https://github.com/features/actions) -automaatiotiedoston sekä JSON-muotoiset [GitHub classroom](https://education.github.com/) -testit, joilla ratkaisusi tarkastetaan. Sinun ei tyypillisesti tarvitse perehtyä näihin tiedostoihin tehtäviä suorittaessasi.
+The [.github](./.github) directory contains [GitHub actions](https://github.com/features/actions) configuration and JSON formatted [GitHub classroom](https://education.github.com/) tests, which are used to check your solutions. There should be no need to familiarize yourself with the files while completing the exercises.
 
+## License and contributors
 
-## Lisenssi ja tekijät
+This exercise is made by Teemu Havulinna and translated to English by Kalle Ilves and it is licensed under a [Creative Commons BY-NC-SA license](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
-Tämän tehtävän on kehittänyt Teemu Havulinna ja se on lisensoitu [Creative Commons BY-NC-SA -lisenssillä](https://creativecommons.org/licenses/by-nc-sa/4.0/).
-
-Tehtävän toteutuksessa on hyödynnetty ChatGPT 3.5 -kielimallia sekä GitHub copilot-tekoälyavustinta.
+ChatGPT 3.5 language model and GitHub copilot AI assistant has been used to implement the exercise.
