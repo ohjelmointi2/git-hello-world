@@ -133,7 +133,7 @@ In the [`.gitignore` file](./.gitignore) we can define, which files are [left ou
 
 The [.github](./.github) directory contains [GitHub actions](https://github.com/features/actions) configuration and JSON formatted [GitHub classroom](https://education.github.com/) tests, which are used to check your solutions. There should be no need to familiarize yourself with the files while completing the exercises.
 
-## License and contributors
+## License and authors
 
 This exercise is made by Teemu Havulinna and translated to English by Kalle Ilves and it is licensed under a [Creative Commons BY-NC-SA license](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
