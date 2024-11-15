@@ -1,6 +1,6 @@
 # Git "Hello world"
 
-In this exercise you learn the basics of Git version control. Before starting the exercise, make sure you have [installed the Git tool for your computer](https://git-scm.com/) and [done the required setup for Git]((https://docs.github.com/en/get-started/quickstart/set-up-git). You will also need a [GitHub](https://github.com/) account<sup>1</sup> which you can create at <https://github.com/>.
+In this exercise you learn the basics of Git version control. Before starting the exercise, make sure you have [installed the Git tool for your computer](https://git-scm.com/) and [done the required setup for Git](https://docs.github.com/en/get-started/quickstart/set-up-git). You will also need a [GitHub](https://github.com/) account<sup>1</sup> which you can create at <https://github.com/>.
 
 <sup>1</sup> <em>If you already use GitHub at work, it might be a good idea (e.g. due to security reasons) to create a separate account for studies.</em>
 
@@ -33,7 +33,6 @@ In this exercise you'll only need the `clone`, `add`, `commit` and `push` comman
 * [Git add (Atlassian)](https://www.atlassian.com/git/tutorials/saving-changes)
 * [Git Cheat Sheet, pdf (GitHub)](https://education.github.com/git-cheat-sheet-education.pdf)
 
-
 ## Exercise
 
 In this task, your goal is to download this Git repository to your computer, make a small change to it, and update your change back to the remote repository.
@@ -50,33 +49,32 @@ Once you have cloned the repository to your computer in your chosen directory, o
 
 💡 *Git _clones_ the repository into a directory which name is by default the same as the name of the repository. The commands in the upcoming sections must be ran inside the direcotry. So, [switch to the cloned directory using the command-line](https://en.wikipedia.org/wiki/Cd_(command)).*
 
-💡 *Tämä repositorio ei sisällä Java-projektia vaan pelkän yksittäisen tekstitiedoston. Se näyttää siis editorissasi mahdollisesti hieman erilaiselta kuin "tavalliset" projektit.*
+💡 *This repository doesn't contain a Java project, but instead a single text file. It will probably look a bit different in your editor compared to "regular" projects.*
 
 
-### Tiedoston muokkaaminen
+### Editing files
 
-Avaa repositoriossa valmiiksi oleva tiedosto [hello.txt](./hello.txt) koodieditorillasi. Lisää tiedostoon teksti `hello world` ja tallenna tiedosto.
+Open the [hello.txt](./hello.txt) file which is already inside your repository with an editor. Add the text `hello world` to the file and save it.
 
-Käytä `git status` -komentoa ja tarkastele sen tulostetta. Näkyykö `hello.txt` tulosteessa? Mitä siitä kerrotaan?
+Use the `git status` command and inspect its output. Do you see the `hello.txt` file in the output. What does it say about the file?
 
+### Adding changes
 
-### Muutoksen lisääminen
+The `hello.txt` file is you edited locally and we want to add the latest changes of the file to the version control. This happens in two steps, which are clearly described in the document [Git add (Atlassian)](https://www.atlassian.com/git/tutorials/saving-changes).
 
-`hello.txt`-tiedostoa on nyt muokattu paikallisesti ja seuraavaksi tiedoston viimeisin sisältö halutaan lisätä myös versionhallintaan. Lisääminen tapahtuu kahdessa vaiheessa, jotka on kuvattu selkeästi dokumentissa [Git add (Atlassian)](https://www.atlassian.com/git/tutorials/saving-changes).
-
-Kun suoritat `git status`-komennon, se kertoo, että tiedosto on muuttunut. Git myös näyttää vinkin komennosta, jolla saat lisättyä muutoksen versionhallintaan:
+When you run the `git status` command, it will tell you that the file has changed. Git also gives a hint of a command you can use to add the changes to the version ctonrol:
 
 ```sh
 git status
-git *** hello.txt    # korvaa *** status-komennon antamalla komennolla
+git *** hello.txt    # replace the *** with the command provided by the git status command
 ```
 
-Yhdessä commitissa voidaan muuttaa useampia tiedostoja, joten voisit jatkaa tiedostojen lisäämistä samaan committiin. Tällä kertaa meille riittää tämä yksi tiedosto.
+We can change multiple files in a single commit, so we could keep on adding files to the same commit. This time, just having this single file is enough.
 
 
-### "Commitin" luonti
+### Creating a commit
 
-Kun suoritat `git status`-komennon, Git näyttää, mitkä tiedostot ovat valmiina commitoitavaksi:
+When we run the `git status` command, Git will show us which files are ready to be commited:
 
 ```sh
 git status
@@ -88,13 +86,13 @@ Changes to be committed:
         modified:   hello.txt
 ```
 
-Käytä seuraavaksi `git commit` -komentoa, joka luo uuden commitin, jossa lisäämäsi muutos on mukana:
+Use the `git commit` command next, which will create a new commit containing the change we made:
 
 ```sh
-git commit -m "Hello world lisätty tiedostoon"   # korvaa viesti vapaasti valitsemallasi tekstillä
+git commit -m "Hello world added to a file"   # replace the commit message of your choice
 ```
 
-💡 *Komennossa `-m` tarkoittaa viestiä, jolla tämä muutos tunnistetaan versiohistoriassa myöhemmin (commit **m**essage).*
+💡 *In the command, the `-m` refers to check the message we use to identify this change in version control later (commit **m**essage).*
 
 
 ### Commitin vienti etärepositorioon
