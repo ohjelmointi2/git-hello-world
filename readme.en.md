@@ -95,15 +95,15 @@ git commit -m "Hello world added to a file"   # replace the commit message of yo
 💡 *In the command, the `-m` refers to check the message we use to identify this change in version control later (commit **m**essage).*
 
 
-### Commitin vienti etärepositorioon
+### Transfering the commits to a remote repository
 
-Aja commitin luonnin jälkeen taas tuttu komento:
+After creating the commit, run the good old command:
 
 ```sh
 git status
 ```
 
-Nyt Git kertoo, että paikallinen kopiosi repositoriosta on yhden commitin edellä etärepositoriota:
+Now, Git tells us that the local copy of the repository is one commit ahead of the remote repository:
 
 ```
 On branch master
@@ -111,16 +111,15 @@ Your branch is ahead of 'origin/master' by 1 commit.
   (use "git ****" to publish your local commits)
 ```
 
-Noudata Gitin antamaa ohjetta ja anna komento, jolla julkaiset paikalliset muutoksesi etärepositorioon:
+Follow the Git's instructions and run the command, which transfers the local changes to the remote repository:
 
 ```sh
-git ****    # korvaa **** edellisestä komennosta saamallasi komennolla
+git ****    # replace the **** with the command provided by the git status command
 ```
 
-Käy lopuksi tarkastamassa etärepositoriosi sisältö. Varmista, että `hello.txt` on päivittynyt.
+Finally, check the changes in GitHub. Make sure that the contents of the `hello.txt` file has been updated.
 
-
-## GitHub actions ja autograding
+## GitHub actions and autograding
 
 Kun olet päivittänyt ratkaisusi etärepositorioon, GitHub käynnistää automaattisesti GitHub actions -workflow:n, joka tarkastaa ratkaisusi ja antaa siitä joko hyväksytyn tai hylätyn tuloksen. Arvioinnin valmistumiseen menee tyypillisesti pari minuuttia ja sen tulos näkyy GitHub-repositoriosi [Actions-välilehdellä](../../actions/workflows/classroom.yml).
 
