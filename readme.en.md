@@ -121,10 +121,9 @@ Finally, check the changes in GitHub. Make sure that the contents of the `hello.
 
 ## GitHub actions and autograding
 
-Kun olet päivittänyt ratkaisusi etärepositorioon, GitHub käynnistää automaattisesti GitHub actions -workflow:n, joka tarkastaa ratkaisusi ja antaa siitä joko hyväksytyn tai hylätyn tuloksen. Arvioinnin valmistumiseen menee tyypillisesti pari minuuttia ja sen tulos näkyy GitHub-repositoriosi [Actions-välilehdellä](../../actions/workflows/classroom.yml).
+Once you have pushed your solutions to the remote repository, GitHub will automatically start a GitHub actions workflow, which will check your solutions and provides either a accepted or rejected result. The check usually takes a few minutes and the result will be visible in the [Actions tab](../../actions/workflows/classroom.yml) of your GitHub repository.
 
-Klikkaamalla yllä olevan linkin takaa viimeisintä *"GitHub Classroom Workflow"* -suoritusta, saat tarkemmat tiedot tehtävän arvioinnista. Sivun alaosassa näkyy saamasi pisteet. Klikkaamalla "Autograding"-otsikkoa pääset katsomaan tarkemmin arvioinnissa suoritetut vaiheet ja niiden tulokset. Kuvitetun ohjeen aiheesta löydät GitHubin dokumentista [View autograding results (github.com)](https://docs.github.com/en/education/manage-coursework-with-github-classroom/learn-with-github-classroom/view-autograding-results).
-
+By clicking link above and then the latest *"GitHub Classroom Workflow"* execution, you'll get more detailed information about the grading of the exercise. At the bottomg of the page you'll see your points. By clicking the "Autograding" heading, you'll get to see more details about the steps performed in grading and their results. Visual instructions can be found in the GitHub's documentation [View autograding results (github.com)](https://docs.github.com/en/education/manage-coursework-with-github-classroom/learn-with-github-classroom/view-autograding-results).
 
 ## .github, .gitignore ja .gitattributes
 
