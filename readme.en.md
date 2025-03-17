@@ -39,18 +39,21 @@ In this task, your goal is to download this Git repository to your computer, mak
 
 ### Cloning a repository
 
+Open the Git Bash application. In Git Bash, like in other command-line tools, commands operate based on the active directory in the tool. By default, the active directory is your home directory (`C:\Users\<yourusername>\` on Windows). The `pwd` command will display the current directory you are in (type in the command and press Enter). We can use the [cd](https://en.wikipedia.org/wiki/Cd_(command)) command to switch to other directories. But, we can have our exercise repository directories in the home directory.
+
 Start by cloning this Git repository to your computer. The exercise must be done in your own copy, so make sure that your GitHub username is included in the repository address! You can create your own copy through the GitHub Classroom link provided in your course assignment.
 
 ```sh
 git clone https://github.com/make-sure-that-your-account-is-in-the-address.git
 ```
 
-Once you have cloned the repository to your computer in your chosen directory, open the cloned directory with your code editor.
+The address can also be found in GitHub by clicking the green "Code" button and copying the address from the dialog.
 
-💡 *Git _clones_ the repository into a directory which name is by default the same as the name of the repository. The commands in the upcoming sections must be ran inside the direcotry. So, [switch to the cloned directory using the command-line](https://en.wikipedia.org/wiki/Cd_(command)).*
+Once you have cloned the repository to your computer in your chosen directory (the home directory, unless you switch to another directory in Git Bash), open the cloned directory with your code editor. Also, keep the Git Bash open for executing git commands.
+
+💡 *Git _clones_ the repository into a directory which name is by default the same as the name of the repository. The commands in the upcoming sections must be ran inside the directory. So, [switch to the cloned directory using the command-line](https://en.wikipedia.org/wiki/Cd_(command)).*
 
 💡 *This repository doesn't contain a Java project, but instead a single text file. It will probably look a bit different in your editor compared to "regular" projects.*
-
 
 ### Editing files
 
