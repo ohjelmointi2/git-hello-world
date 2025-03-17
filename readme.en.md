@@ -39,7 +39,7 @@ In this task, your goal is to download this Git repository to your computer, mak
 
 ### Cloning a repository
 
-Open the Git Bash application. In Git Bash, like in other command-line tools, commands operate based on the active directory in the tool. By default, the active directory is your home directory (`C:\Users\<yourusername>\` on Windows). The `pwd` command will display the current directory you are in (type in the command and press Enter). We can use the [cd](https://en.wikipedia.org/wiki/Cd_(command)) command to switch to other directories. But, we can have our exercise repository directories in the home directory.
+Open the Git Bash application. In Git Bash, like in other command-line tools, commands operate based on the active directory in the application. By default, the active directory is your home directory (`C:\Users\<yourusername>\` on Windows). The `pwd` command will display the current directory you are in (type in the command and press Enter). We can use the [cd](https://en.wikipedia.org/wiki/Cd_(command)) command to switch to other directories. But, we can have our exercise repository directories in the home directory.
 
 Start by cloning this Git repository to your computer. The exercise must be done in your own copy, so make sure that your GitHub username is included in the repository address! You can create your own copy through the GitHub Classroom link provided in your course assignment.
 
