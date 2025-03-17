@@ -124,9 +124,17 @@ Finally, check the changes in GitHub. Make sure that the contents of the `hello.
 
 ## GitHub actions and autograding
 
-Once you have pushed your solutions to the remote repository, GitHub will automatically start a GitHub actions workflow, which will check your solutions and provides either a accepted or rejected result. The check usually takes a few minutes and the result will be visible in the [Actions tab](../../actions/workflows/classroom.yml) of your GitHub repository.
+Once you have pushed your solutions to the remote repository, GitHub will automatically start a GitHub actions workflow, which will check your solutions and provides either a accepted or rejected result. The check usually takes a few minutes and the result will be visible in the "Actions" of your GitHub repository.
 
-By clicking link above and then the latest *"GitHub Classroom Workflow"* execution, you'll get more detailed information about the grading of the exercise. At the bottomg of the page you'll see your points. By clicking the "Autograding" heading, you'll get to see more details about the steps performed in grading and their results. Visual instructions can be found in the GitHub's documentation [View autograding results (github.com)](https://docs.github.com/en/education/manage-coursework-with-github-classroom/learn-with-github-classroom/view-autograding-results).
+![autograde-step-1](https://github.com/user-attachments/assets/f8c10b84-9b84-4d9d-9275-0ef4f38434a0)
+
+Then, clicking the latest *"GitHub Classroom Workflow"* execution, you'll get more detailed information about the grading of the exercise.
+
+![autograde-step-2](https://github.com/user-attachments/assets/1d594537-a45e-4c41-a8c4-65e514439788)
+
+At the bottom of the page you'll see your points. By clicking the "Autograding" heading, you'll get to see more details about the steps performed in grading and their results.
+
+![autograde-step-3](https://github.com/user-attachments/assets/c44c7c42-4a30-40b9-ac52-eb375c4b0a34)
 
 ## .github, .gitignore ja .gitattributes
 
