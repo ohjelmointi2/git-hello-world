@@ -1,0 +1,10 @@
+{
+  "tests": [
+    {
+      "name": "Hello world is saved to hello.txt",
+      "run": "grep -qi 'hello world' hello.txt || { echo 'The hello.txt file should contain the text \"hello world\".'; exit 1; }",
+      "timeout": "1m",
+      "points": 1
+    }
+  ]
+}
