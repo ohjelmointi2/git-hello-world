@@ -1,14 +1,7 @@
 # Git "Hello world"
 
-In this exercise you learn the basics of Git version control. Before starting the exercise, make sure you have [installed the Git tool for your computer](https://git-scm.com/) and [done the required setup for Git](https://docs.github.com/en/get-started/quickstart/set-up-git). You will also need a [GitHub](https://github.com/) account<sup>1</sup> which you can create at <https://github.com/>.
+In this exercise you learn the basics of Git version control. Before starting the exercise, make sure you have [installed the Git tool for your computer](https://git-scm.com/) and [done the required setup for Git](https://docs.github.com/en/get-started/quickstart/set-up-git).
 
-<sup>1</sup> <em>If you already use GitHub at work, it might be a good idea (e.g. due to security reasons) to create a separate account for studies.</em>
-
-🔐 *You don't have to give your name while registering your account in GitHub. You can use the school's email and you can hide it from other users by following the [GitHub's instructions](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/setting-your-commit-email-address#setting-your-commit-email-address-on-github).*
-
-<!--
-⛔ *If you absolutely do not want to use GitHub in the course, discuss with your teacher about a possible alternative git service or method for submitting assignments.*
--->
 
 ## Git command-line tool
 
