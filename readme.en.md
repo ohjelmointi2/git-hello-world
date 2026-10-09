@@ -1,6 +1,6 @@
 # Git "Hello world"
 
-In this exercise you learn the basics of Git version control. Before starting the exercise, make sure you have [installed the Git tool for your computer](https://git-scm.com/) and [done the required setup for Git](https://docs.github.com/en/get-started/quickstart/set-up-git).
+In this exercise you learn the basics of Git version control. Before starting the exercise, make sure you have [installed the Git tool for your computer](https://git-scm.com/) and [done the required setup for Git](https://docs.github.com/en/get-started/quickstart/set-up-git). Alternatively, you can also use cloud-based development environments such as [GitHub Codespaces](https://github.com/features/codespaces), where VS Code, Git, and Java are already installed.
 
 
 ## Git command-line tool
@@ -34,7 +34,7 @@ In this task, your goal is to download this Git repository to your computer, mak
 
 Open the Git Bash application. In Git Bash, like in other command-line tools, commands operate based on the active directory in the application. By default, the active directory is your home directory (`C:\Users\<yourusername>\` on Windows). The `pwd` command will display the current directory you are in (type in the command and press Enter). We can use the [cd](https://en.wikipedia.org/wiki/Cd_(command)) command to switch to other directories. But, we can have our exercise repository directories in the home directory.
 
-Start by cloning this Git repository to your computer. The exercise must be done in your own copy, so make sure that your GitHub username is included in the repository address! You can create your own copy through the GitHub Classroom link provided in your course assignment.
+Start by cloning this Git repository to your computer. The exercise must be done in your own copy, so make sure that your GitHub username is included in the repository address!
 
 ```sh
 git clone https://github.com/make-sure-that-your-account-is-in-the-address.git
@@ -121,7 +121,7 @@ Once you have pushed your solutions to the remote repository, GitHub will automa
 
 ![autograde-step-1](https://github.com/user-attachments/assets/f8c10b84-9b84-4d9d-9275-0ef4f38434a0)
 
-Then, clicking the latest *"GitHub Classroom Workflow"* execution, you'll get more detailed information about the grading of the exercise.
+Then, clicking the latest workflow execution, you'll get more detailed information about the grading of the exercise.
 
 ![autograde-step-2](https://github.com/user-attachments/assets/1d594537-a45e-4c41-a8c4-65e514439788)
 
@@ -135,7 +135,7 @@ This exercise template includes the assignment and an editable file, as well as 
 
 In the [`.gitignore` file](./.gitignore) we can define, which files are [left outside the version control](https://git-scm.com/docs/gitignore), where as in the [`.gitattributes` file](./.gitattributes) we can define [common line ending characters](https://docs.github.com/en/get-started/getting-started-with-git/configuring-git-to-handle-line-endings) for all text files. You can modify these files to suit your needs in the exercises.
 
-The [.github](./.github) directory contains [GitHub actions](https://github.com/features/actions) configuration and JSON formatted [GitHub classroom](https://education.github.com/) tests, which are used to check your solutions. There should be no need to familiarize yourself with the files while completing the exercises.
+The [.github](./.github) directory contains [GitHub actions](https://github.com/features/actions) configuration and the [.grading](./.grading) directory contains JSON formatted tests, which are used to check your solutions. There should be no need to familiarize yourself with the files while completing the exercises.
 
 ## License and authors
 

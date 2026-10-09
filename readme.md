@@ -3,12 +3,12 @@
 
 # Git "Hello world"
 
-Tässä tehtävässä opit perusasioita Git-versionhallinnasta. Tehtävän edellytyksenä on, että olet [asentanut Git-työkalun koneellesi (git-scm.com)](https://git-scm.com/) ja tehnyt [tarvittavat asetukset Gitin käyttämiseksi (GitHub)](https://docs.github.com/en/get-started/quickstart/set-up-git).
+Tässä tehtävässä opit perusasioita Git-versionhallinnasta. Tehtävän edellytyksenä on, että olet [asentanut Git-työkalun koneellesi (git-scm.com)](https://git-scm.com/) ja tehnyt [tarvittavat asetukset Gitin käyttämiseksi (GitHub)](https://docs.github.com/en/get-started/quickstart/set-up-git). Vaihtoehtoisesti voit käyttää myös pilvipohjaisia kehitysympäristöjä, kuten [GitHub Codespaces](https://github.com/features/codespaces), jossa VS Code, Git ja Java ovat valmiiksi asennettuina.
 
 
 ## Git-komentorivityökalu
 
-Tehtävänanto keskittyy Git-komentorivityökaluun. Itse komentorivin osalta oletamme [komentorivin peruskäytön](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Command_line) olevan ennalta tuttua. Peruskäytöksi laskemme mm. komentorivin avaamisen ja eri hakemistojen välillä siirtymisen. Mikäli komentorivi aiheuttaa ongelmia, voit ratkaista tämän ja seuraavat tehtävät myös graafisella työkalulla, kuten VS Code tai GitHub desktop.
+Tehtävänanto keskittyy Git-komentorivityökaluun. Itse komentorivin osalta oletamme [komentorivin peruskäytön](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Command_line) olevan ennalta tuttua. Peruskäytöksi laskemme mm. komentorivin avaamisen ja eri hakemistojen välillä siirtymisen. Mikäli komentorivi aiheuttaa ongelmia, voit ratkaista tämän ja seuraavat tehtävät myös graafisella työkalulla, kuten [VS Code](https://code.visualstudio.com/docs/sourcecontrol/overview) tai [GitHub desktop](https://desktop.github.com/).
 
 * [Command line crash course (developer.mozilla.org)](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Command_line)
 * [Using Git source control in VS Code (code.visualstudio.com)](https://code.visualstudio.com/docs/sourcecontrol/overview)
@@ -37,7 +37,7 @@ Tässä tehtävässä tarkoituksesi on ladata tämä Git-repositorio omalle kone
 
 ### Repositorion kloonaaminen
 
-Aloita kloonaamalla tämä Git-repositorio omalle koneellesi. Harjoitus täytyy tehdä omassa kopiossasi, eli varmista, että repositorion osoitteessa on mukana oma GitHub-käyttäjätunnuksesi! Oman kopiosi saat luotua kurssitoteutuksesi tehtävänannon GitHub classroom -linkin kautta.
+Aloita kloonaamalla tämä Git-repositorio omalle koneellesi. Harjoitus täytyy tehdä omassa kopiossasi, eli varmista, että repositorion osoitteessa on mukana oma GitHub-käyttäjätunnuksesi!
 
 ```sh
 git clone https://github.com/varmista-etta-github-tunnuksesi-on-repositorion-osoitteessa.git
@@ -65,7 +65,7 @@ Kun suoritat `git status`-komennon, se kertoo, että tiedosto on muuttunut. Git 
 
 ```sh
 git status
-git *** hello.txt    # korvaa *** status-komennon antamalla komennolla
+git *** hello.txt    # korvaa *** oikealla komennolla
 ```
 
 Yhdessä commitissa voidaan muuttaa useampia tiedostoja, joten voisit jatkaa tiedostojen lisäämistä samaan committiin. Tällä kertaa meille riittää tämä yksi tiedosto.
@@ -76,10 +76,8 @@ Yhdessä commitissa voidaan muuttaa useampia tiedostoja, joten voisit jatkaa tie
 Kun suoritat `git status`-komennon, Git näyttää, mitkä tiedostot ovat valmiina commitoitavaksi:
 
 ```sh
-git status
-```
+$ git status
 
-```
 Changes to be committed:
   (use "git restore --staged <file>..." to unstage)
         modified:   hello.txt
@@ -91,7 +89,7 @@ Käytä seuraavaksi `git commit` -komentoa, joka luo uuden commitin, jossa lisä
 git commit -m "Hello world lisätty tiedostoon"   # korvaa viesti vapaasti valitsemallasi tekstillä
 ```
 
-💡 *Komennossa `-m` tarkoittaa viestiä, jolla tämä muutos tunnistetaan versiohistoriassa myöhemmin (commit **m**essage).*
+Komennossa `-m` tarkoittaa viestiä, jolla tämä muutos tunnistetaan versiohistoriassa myöhemmin (commit message).
 
 
 ### Commitin vienti etärepositorioon
@@ -121,18 +119,26 @@ Käy lopuksi tarkastamassa etärepositoriosi sisältö. Varmista, että `hello.t
 
 ## GitHub actions ja autograding
 
-Kun olet päivittänyt ratkaisusi etärepositorioon, GitHub käynnistää automaattisesti GitHub actions -workflow:n, joka tarkastaa ratkaisusi ja antaa siitä joko hyväksytyn tai hylätyn tuloksen. Arvioinnin valmistumiseen menee tyypillisesti pari minuuttia ja sen tulos näkyy GitHub-repositoriosi [Actions-välilehdellä](../../actions/workflows/classroom.yml).
+Kun olet vienyt ratkaisusi GitHubiin, GitHub käynnistää automaattisesti GitHub actions -workflow:n, joka tarkastaa ratkaisusi ja antaa siitä joko hyväksytyn tai hylätyn tuloksen. Arvioinnin valmistumiseen menee tyypillisesti pari minuuttia ja sen tulos näkyy GitHub-repositoriosi actions-välilehdellä:
 
-Klikkaamalla yllä olevan linkin takaa viimeisintä *"GitHub Classroom Workflow"* -suoritusta, saat tarkemmat tiedot tehtävän arvioinnista. Sivun alaosassa näkyy saamasi pisteet. Klikkaamalla "Autograding"-otsikkoa pääset katsomaan tarkemmin arvioinnissa suoritetut vaiheet ja niiden tulokset. Kuvitetun ohjeen aiheesta löydät GitHubin dokumentista [View autograding results (github.com)](https://docs.github.com/en/education/manage-coursework-with-github-classroom/learn-with-github-classroom/view-autograding-results).
+![autograde-step-1](https://github.com/user-attachments/assets/f8c10b84-9b84-4d9d-9275-0ef4f38434a0)
+
+Klikkaamalla viimeisintä workflow-suoritusta saat tarkempaa tietoa tehtävän arvioinnista:
+
+![autograde-step-2](https://github.com/user-attachments/assets/1d594537-a45e-4c41-a8c4-65e514439788)
+
+Sivun alareunassa näet pisteesi. Klikkaamalla "Autograding"-otsikkoa näet tarkempia tietoja arvioinnissa suoritetuista vaiheista ja niiden tuloksista:
+
+![autograde-step-3](https://github.com/user-attachments/assets/c44c7c42-4a30-40b9-ac52-eb375c4b0a34)
 
 
-## .github, .gitignore ja .gitattributes
+## .github, .gitignore, .gitattributes ja .grading
 
-Tämä tehtäväpohja sisältää tehtävänannon sekä muokattavan tiedoston lisäksi pisteellä alkavia "piilotiedostoja". Jos tiedostot eivät näy koodieditorisi hakemistorakenteessa, voit joutua muuttamaan editorisi asetuksia.
+Tämä tehtäväpohja sisältää tehtävänannon sekä muokattavan tiedoston lisäksi pisteellä alkavia "piilotiedostoja". Jos tiedostot eivät näy koodieditorisi hakemistorakenteessa, voit joutua muuttamaan editorisi asetuksia, mikäli haluat tutustua näihin tiedostoihin.
 
 [`.gitignore`-tiedostossa](./.gitignore) voidaan määritellä, mitkä tiedostot jätetään [versionhallinnan ulkopuolelle](https://git-scm.com/docs/gitignore), kun taas [`.gitattributes`-tiedostossa](./.gitattributes) on määritetty kaikille tekstitiedostoille [yhtenäiset rivinvaihtomerkit](https://docs.github.com/en/get-started/getting-started-with-git/configuring-git-to-handle-line-endings). Voit muokata näitä tiedostoja tarpeidesi mukaan kurssin tehtäviä suorittaessasi.
 
-[.github/](./.github/)-hakemisto sisältää [GitHub actions](https://github.com/features/actions) -automaatiotiedoston sekä JSON-muotoiset [GitHub classroom](https://education.github.com/) -testit, joilla ratkaisusi tarkastetaan. Sinun ei tyypillisesti tarvitse perehtyä näihin tiedostoihin tehtäviä suorittaessasi.
+[.github/](./.github/)-hakemisto sisältää [GitHub actions](https://github.com/features/actions) -automaatiotiedoston ja [.grading/](./.grading/)-hakemisto sisältää JSON-muotoiset testit, joilla ratkaisusi tarkastetaan. Sinun ei tyypillisesti tarvitse perehtyä näihin tiedostoihin tehtäviä suorittaessasi.
 
 
 ## Lisenssi ja tekijät
