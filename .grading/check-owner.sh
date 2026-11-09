@@ -4,7 +4,7 @@ if ! owner_type=$(gh api "repos/$GITHUB_REPOSITORY" --jq '.owner.type'); then
     echo "Could not check the repository owner. Please ensure that the GitHub CLI is installed and authenticated."
     echo "In the grading environment, the GitHub CLI is pre-installed and authenticated. If you are running this"
     echo "script locally, please follow the instructions to install and authenticate the GitHub CLI:"
-    echo "https://cli.github.com/manual/installation"
+    echo "https://cli.github.com/"
     exit 1
 fi
 
