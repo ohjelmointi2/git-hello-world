@@ -21,6 +21,8 @@ jobs:
       - name: Autograding
         uses: ohjelmointi2/grading-action@v0
         timeout-minutes: 2
+        env:
+          GH_TOKEN: ${{ github.token }}
         with:
           test_suite: .grading/config.json
 
